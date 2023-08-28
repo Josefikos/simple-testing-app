@@ -5,77 +5,78 @@ public class Main {
         TestGame test = new TestGame();
 
         test.addQuestion(question -> question
-                .setTitle("Otázka #1")
-                .setContent("Jak se máš?")
+                .setTitle("Prirodopis")
+                .setContent("Jak se nazyva narodni strom CR?")
                 .addAnswer(answer -> answer
-                        .setContent("Špatně")
+                        .setContent("Briza belokora")
+                )
+                .addAnswer(answer -> answer
+                        .setContent("Lipa srdcita")
                         .setCorrect()
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Dobře")
-                )
-                .addAnswer(answer -> answer
-                        .setContent("Ujde to")
+                        .setContent("Dub letni")
                 )
         );
 
         test.addQuestion(question -> question
-                .setTitle("Otázka #2")
-                .setContent("Jak se máš?")
+                .setTitle("Literatura")
+                .setContent("Kterou z nasledujicich knizek NENAPSAL George Orwell?")
                 .addAnswer(answer -> answer
-                        .setContent("Špatně")
+                        .setContent("Bili tesak")
                         .setCorrect()
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Dobře")
+                        .setContent("Barmske dny")
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Ujde to")
+                        .setContent("Farma zvirat")
                 )
         );
 
         test.addQuestion(question -> question
-                .setTitle("Otázka #3")
-                .setContent("Jak se máš?")
+                .setTitle("Zemepis")
+                .setContent("Ktery ocean zabira nejvice % zemskeho povrchu?")
                 .addAnswer(answer -> answer
-                        .setContent("Špatně")
+                        .setContent("Tichy ocean")
                         .setCorrect()
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Dobře")
+                        .setContent("Indicky ocean")
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Ujde to")
+                        .setContent("Atlansky ocean")
                 )
         );
 
         test.addQuestion(question -> question
-                .setTitle("Otázka #4")
-                .setContent("Jak se máš?")
+                .setTitle("Sport")
+                .setContent("V jakem roce budou pristi Zimni Olympijske hry?")
                 .addAnswer(answer -> answer
-                        .setContent("Špatně")
+                        .setContent("2026")
                         .setCorrect()
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Dobře")
-                )
-                .addAnswer(answer -> answer
-                        .setContent("Ujde to")
+                        .setContent("2024")
                 )
         );
 
+        // @via https://w3techs.com/technologies/overview/web_server
         test.addQuestion(question -> question
-                .setTitle("Otázka #5")
-                .setContent("Jak se máš?")
+                .setTitle("Technologie")
+                .setContent("Jaky webovy server je nejvice pouzavany?")
                 .addAnswer(answer -> answer
-                        .setContent("Špatně")
+                        .setContent("Apache")
+                )
+                .addAnswer(answer -> answer
+                        .setContent("LiteSpeed")
+                )
+                .addAnswer(answer -> answer
+                        .setContent("Nginx")
                         .setCorrect()
                 )
                 .addAnswer(answer -> answer
-                        .setContent("Dobře")
-                )
-                .addAnswer(answer -> answer
-                        .setContent("Ujde to")
+                        .setContent("Tomcat")
                 )
         );
 
