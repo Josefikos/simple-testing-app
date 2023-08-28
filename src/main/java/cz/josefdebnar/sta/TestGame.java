@@ -50,7 +50,7 @@ public class TestGame extends Test implements Game {
         }
 
         System.out.println();
-        System.out.println("Odpovězde na otázku <" + 1 + ";" + question.getAnswers().size() + ">:");
+        System.out.println("Odpovezte na otazku <" + 1 + ";" + question.getAnswers().size() + ">:");
         int answer = input.intInputInRange(1, question.getAnswers().size()) - 1;
 
         if (!question.getCorrectKeys().contains(answer)) {
@@ -61,22 +61,22 @@ public class TestGame extends Test implements Game {
     }
 
     private void configure() {
-        System.out.println("Zobrazit správnou odpověď při chybě:");
+        System.out.println("Zobrazit spravnou odpoved pri chybe:");
         System.out.println("0: Ne");
         System.out.println("1: Ano");
         this.setPrintCorrectAnswers(input.intInputInRange(0, 1) == 1);
     }
 
     public void run() {
-        System.out.println("Máš před sebou " + this.getQuestions().size() + " otázek");
-        System.out.println("Test ti měří cas");
-        System.out.println("Hodně štěstí");
+        System.out.println("Mas pred sebou " + this.getQuestions().size() + " otazek");
+        System.out.println("Test meri cas");
+        System.out.println("Hodne stesti");
         System.out.println();
 
         this.configure();
 
         System.out.println();
-        System.out.println("Zmáčkni \"enter\" pro start");
+        System.out.println("Zmackni \"enter\" pro start");
         try {
             System.in.read();
         } catch (IOException e) {
@@ -93,7 +93,7 @@ public class TestGame extends Test implements Game {
                 if (this.isPrintingCorrectAnswers()) {
                     System.out.println();
                     System.out.println("Chyba!");
-                    System.out.println("Správná odpověd bylo: " + e.correctAnswer.getContent());
+                    System.out.println("Spravna odpoved byla: " + e.correctAnswer.getContent());
                 }
             }
             System.out.println();
@@ -104,6 +104,6 @@ public class TestGame extends Test implements Game {
 
         System.out.println();
         System.out.println("Body: " + this.getScore() + "/" + this.getQuestions().size());
-        System.out.println("Doba trvání: " + duration + " sekund");
+        System.out.println("Doba trvani: " + duration + " sekund");
     }
 }

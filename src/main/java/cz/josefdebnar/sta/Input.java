@@ -11,7 +11,7 @@ public class Input {
             if (input.hasNextInt()) {
                 return input.nextInt();
             } else {
-                System.out.println("Zadejte prosím celé číslo!");
+                System.out.println("Zadejte prosím cele cislo!");
                 input.next();
             }
         }
@@ -23,7 +23,7 @@ public class Input {
         int val;
 
         while (!((val = intInput()) <= max && val >= min)) {
-            System.out.println("Zadejte prosím celé číslo v intervalu <" + min + ";" + max + ">!");
+            System.out.println("Zadejte prosim cele cislo v intervalu <" + min + ";" + max + ">!");
         }
 
         return val;

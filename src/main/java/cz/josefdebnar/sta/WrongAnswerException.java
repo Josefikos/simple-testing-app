@@ -6,7 +6,7 @@ public class WrongAnswerException extends Exception {
     Answer correctAnswer;
 
     public WrongAnswerException(Answer answer) {
-        super("Špatná odpověd!");
+        super("Spatna odpoved!");
         this.correctAnswer = answer;
     }
 }
